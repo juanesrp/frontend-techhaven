@@ -30,7 +30,7 @@ const Order = ({ order }: { order: IOrder }) => {
       <div className="flex flex-col md:flex-row p-2 gap-2">
         <p className="font-bold">Productos:</p>
         {products.map((product, index) => (
-          <p>
+          <p key={index}>
             {product.name} {index !== products.length - 1 ? "," : ""}
           </p>
         ))}
