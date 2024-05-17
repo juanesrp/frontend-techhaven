@@ -1,9 +1,9 @@
 "use client";
 import React, { useEffect, useState } from "react";
 
-import Shiping from "@/Components/forms/Shiping";
-import PayMethod from "@/Components/forms/PayMethod";
-import CartProduct from "@/Components/CartProduct/CartProduct";
+import Shiping from "@/components/forms/Shiping";
+import PayMethod from "@/components/forms/PayMethod";
+import CartProduct from "@/components/CartProduct/CartProduct";
 import IProducts from "@/interfaces/IProduct";
 import { userSession } from "@/interfaces";
 import { createOrders, getOrders } from "@/helpers/orders.helpers";

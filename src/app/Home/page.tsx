@@ -1,6 +1,6 @@
 import NavBar from "@/Components/NavBar/NavBar";
-import Products from "@/Components/Products/Products";
-import Sidebar from "@/Components/Sidebar/Sidebar";
+import Products from "@/components/Products/Products";
+import Sidebar from "@/components/Sidebar/Sidebar";
 import { getProductsDB } from "@/helpers/product.helper";
 import IProducts from "@/interfaces/IProduct";
 import React from "react";
