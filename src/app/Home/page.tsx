@@ -1,11 +1,13 @@
 import Products from "@/components/Products/Products";
 import Sidebar from "@/components/Sidebar/Sidebar";
 import { getProductsDB } from "@/helpers/product.helper";
+import { productsPreload } from "@/helpers/productsPreload";
 import IProducts from "@/interfaces/IProduct";
 import React from "react";
 
 const Home = async () => {
-  const products = await getProductsDB();
+  // const products = await getProductsDB();
+  const products = productsPreload;
 
   return (
     <div>

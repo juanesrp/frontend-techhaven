@@ -33,25 +33,25 @@ const Login = ({ state, toggleModal }: LoginParams) => {
 
   const handleOnSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    const fetchUser = await userLogin(userData);
+    // const fetchUser = await userLogin(userData);
 
-    const user = {
-      name: fetchUser.user.name,
-      email: fetchUser.user.email,
-      id: fetchUser.user.id,
-      address: fetchUser.user.address,
-      orders: fetchUser.user.orders,
-      phone: fetchUser.user.phone,
-      role: fetchUser.user.role,
-    };
+    // const user = {
+    //   name: fetchUser.user.name,
+    //   email: fetchUser.user.email,
+    //   id: fetchUser.user.id,
+    //   address: fetchUser.user.address,
+    //   orders: fetchUser.user.orders,
+    //   phone: fetchUser.user.phone,
+    //   role: fetchUser.user.role,
+    // };
 
-    localStorage.setItem(
-      "userSession",
-      JSON.stringify({
-        token: fetchUser.token,
-        user: user,
-      })
-    );
+    // localStorage.setItem(
+    //   "userSession",
+    //   JSON.stringify({
+    //     token: fetchUser.token,
+    //     user: user,
+    //   })
+    // );
     setUserData({ email: "", password: "" });
     toggleModal(); // Cerrar el modal
     await Swal.fire({

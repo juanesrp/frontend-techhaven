@@ -20,18 +20,18 @@ const MyAccount = () => {
     }
   }, []);
 
-  useEffect(() => {
-    const getData = async () => {
-      try {
-        const response = await getOrders(userSession?.token!);
-        setOrders(response);
-      } catch (error: any) {
-        throw new Error(error);
-      }
-    };
+  // useEffect(() => {
+  //   const getData = async () => {
+  //     try {
+  //       const response = await getOrders(userSession?.token!);
+  //       setOrders(response);
+  //     } catch (error: any) {
+  //       throw new Error(error);
+  //     }
+  //   };
 
-    userSession && getData();
-  }, [userSession]);
+  //   userSession && getData();
+  // }, [userSession]);
 
   return (
     <div className="flex flex-col md:flex-row gap-4 p-4">

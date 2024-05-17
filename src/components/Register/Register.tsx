@@ -36,7 +36,7 @@ const Register = () => {
 
   const handleOnSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    await userRegister(userData);
+    // await userRegister(userData);
     alert(`${userData.name} ${userData.lastName} ha sido registrado`);
     setUserData(initialData);
   };

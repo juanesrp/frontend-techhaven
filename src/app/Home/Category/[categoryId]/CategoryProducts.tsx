@@ -3,6 +3,7 @@ import Products from "@/components/Products/Products";
 import Sidebar from "@/components/Sidebar/Sidebar";
 import { categoriesToPreLoad } from "@/helpers/categoriesPreload";
 import { getProductsByCategoryId } from "@/helpers/product.helper";
+import { productsPreload } from "@/helpers/productsPreload";
 import IProducts from "@/interfaces/IProduct";
 import React, { useEffect, useState } from "react";
 // Importa tu función para obtener productos
@@ -17,10 +18,14 @@ const CategoryProducts = ({ params }: { params: { categoryId: number } }) => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const fetchedProducts = await getProductsByCategoryId(
-          Number(params.categoryId)
+        // const fetchedProducts = await getProductsByCategoryId(
+        //   Number(params.categoryId)
+        // );
+
+        const productsCategory = productsPreload.filter(
+          (product) => product.categoryId === Number(params.categoryId)
         );
-        setProducts(fetchedProducts);
+        setProducts(productsCategory);
       } catch (error) {
         console.error("Error fetching products:", error);
       }
