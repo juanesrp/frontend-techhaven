@@ -140,7 +140,9 @@ const NavBar = () => {
                 />
               </svg>
               {userName ? (
-                <span className="text-sm hidden md:block">{userName}</span>
+                <span className="text-sm hidden md:block dark:text-white">
+                  {userName}
+                </span>
               ) : (
                 <span className="text-sm hidden md:block">Iniciar Sesion</span>
               )}
