@@ -1,4 +1,3 @@
-import NavBar from "@/Components/NavBar/NavBar";
 import Products from "@/components/Products/Products";
 import Sidebar from "@/components/Sidebar/Sidebar";
 import { getProductsDB } from "@/helpers/product.helper";
