@@ -1,6 +1,6 @@
 "use client";
-import Products from "@/Components/Products/Products";
-import Sidebar from "@/Components/Sidebar/Sidebar";
+import Products from "@/components/Products/Products";
+import Sidebar from "@/components/Sidebar/Sidebar";
 import { categoriesToPreLoad } from "@/helpers/categoriesPreload";
 import { getProductsByCategoryId } from "@/helpers/product.helper";
 import IProducts from "@/interfaces/IProduct";

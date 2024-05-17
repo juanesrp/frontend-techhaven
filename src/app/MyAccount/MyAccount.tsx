@@ -1,7 +1,7 @@
 "use client";
 
-import Order from "@/Components/Order/Order";
-import PersonalData from "@/Components/PersonalData/PersonalData";
+import Order from "@/components/Order/Order";
+import PersonalData from "@/components/PersonalData/PersonalData";
 import { getOrders } from "@/helpers/orders.helpers";
 import { IOrder, userSession } from "@/interfaces";
 import { redirect } from "next/navigation";

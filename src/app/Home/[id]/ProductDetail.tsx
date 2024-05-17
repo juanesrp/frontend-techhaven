@@ -1,4 +1,4 @@
-import CardDetail from "@/Components/CardDetail/CardDetail";
+import CardDetail from "@/components/CardDetail/CardDetail";
 import { getProduct } from "@/helpers/product.helper";
 
 import IProducts from "@/interfaces/IProduct";
