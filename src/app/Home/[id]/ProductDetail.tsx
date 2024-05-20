@@ -6,9 +6,9 @@ import IProducts from "@/interfaces/IProduct";
 import React from "react";
 
 const ProductDetail = async ({ params }: { params: { id: number } }) => {
-  // const product = await getProduct(params.id);
+  const product = await getProduct(params.id);
 
-  const product = productsPreload.find((item) => item.id === Number(params.id));
+  // const product = productsPreload.find((item) => item.id === Number(params.id));
   return (
     <div>
       {product ? (

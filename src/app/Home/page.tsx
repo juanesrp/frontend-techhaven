@@ -6,8 +6,8 @@ import IProducts from "@/interfaces/IProduct";
 import React from "react";
 
 const Home = async () => {
-  // const products = await getProductsDB();
-  const products = productsPreload;
+  const products = await getProductsDB();
+  // const products = productsPreload;
 
   return (
     <div>

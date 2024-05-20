@@ -18,9 +18,9 @@ const CategoryProducts = ({ params }: { params: { categoryId: number } }) => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        // const fetchedProducts = await getProductsByCategoryId(
-        //   Number(params.categoryId)
-        // );
+        const fetchedProducts = await getProductsByCategoryId(
+          Number(params.categoryId)
+        );
 
         const productsCategory = productsPreload.filter(
           (product) => product.categoryId === Number(params.categoryId)

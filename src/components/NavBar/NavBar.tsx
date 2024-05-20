@@ -144,7 +144,9 @@ const NavBar = () => {
                   {userName}
                 </span>
               ) : (
-                <span className="text-sm hidden md:block">Iniciar Sesion</span>
+                <span className="text-sm hidden md:block dark:text-white">
+                  Iniciar Sesion
+                </span>
               )}
             </button>
             <Login state={modalUser} toggleModal={toggleModalUser} />
